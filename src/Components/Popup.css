@@ -1,0 +1,171 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  .popup {
+    background: white;
+    width: 54%;
+    max-width: 890px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -45px;
+  right: -45px;
+  background: #fff;
+   border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .header-text {
+    background: rgb(216, 227, 216);
+color: #0F9D58;
+    padding: 9px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  
+  .header-text span {
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin: 10px 0;
+  }
+  
+  .signin-text {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .signin-text a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .popup-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .form {
+    flex: 1;
+  }
+  
+  .name-fields {
+    display: flex;
+    /* gap: 2px; */
+    background-color: #c7c4c4;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-btn {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px 0px;
+
+  }
+  
+  .social-btn {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fb-btn {
+    
+   color: black;
+   background: white;
+   font-weight: 300;
+  }
+  
+  .google-btn {
+    background: white;
+    border: 1px solid #ddd;
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .google-btn:hover {
+    background: #f8f9fa;
+    border-color: #ccc;
+  }
+  
+  .google-icon {
+    font-size: 18px;
+    background: linear-gradient(45deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .google-icon {
+    font-size: 18px;
+    background: linear-gradient(45deg, #4285F4, #DB4437, #F4B400, #0F9D58) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    display: inline-block;
+  }
+  
+  .terms {
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .terms a {
+    color: rgb(24, 24, 227);
+  }
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  

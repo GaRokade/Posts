@@ -1,0 +1,77 @@
+import React from "react";
+import "./App.css";
+const Header = () => {
+  return (
+    <header className="header">
+      <a href="https://dont-copy.netlify.app/">
+        <img src="Logo.svg" width="162.57px" height="24px" alt="Logo" />
+      </a>
+      <form className="search-form">
+        <button type="submit" className="custom-search">
+          <img src="search.svg" alt="Search" width="22" height="22" />
+        </button>
+        <input type="search" placeholder="Search for your favorite groups in ATG" className="custom-input-search" />
+      </form>
+      <button className="btn custom-btn-create" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create Account. <span className="text-primary">It's Free!</span>
+      </button>
+    </header>
+  );
+};
+
+const MainContent = () => {
+  return (
+    <div className="main-content">
+      <h1>Computer Engineering</h1>
+      <p>142,765 Computer Engineers follow this</p>
+    </div>
+  );
+};
+
+const Post = ({ type, title, content, author, image }) => {
+  return (
+    <div className="post">
+      <img src={image} alt={title} className="imagePost" />
+      <div className="post-content">
+        <h3>{type}</h3>
+        <h4>{title}</h4>
+        <p>{content}</p>
+        <div className="author-info">
+          <img src="author-image.jpg" alt={author} className="author-img" />
+          <span>{author}</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="app">
+      <Header />
+      <MainContent />
+      <div className="posts">
+        <Post
+          type="✍️ Article"
+          title="What if famous brands had regular fonts? Meet RegulaBrands!"
+          content="I’ve worked in UX for the better part of a decade..."
+          author="Siddharth Goyal"
+          image="./main_files/nature-rDsfVg8l.jpg"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+
+<li className="nav-item dropdown">
+          <a data-bs-toggle="dropdown" aria-expanded="false">
+          Write post
+          </a>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="#">Write post</a></li>
+            
+          </ul>
+        </li>
